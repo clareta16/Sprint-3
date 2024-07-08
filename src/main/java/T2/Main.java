@@ -2,8 +2,6 @@ package T2;
 
 import T2.interfaces.Adreca;
 import T2.interfaces.NumTlfn;
-import T2.models.Agenda;
-import T2.models.Contacte;
 import T2.models.FactoryImplement;
 
 public class Main {

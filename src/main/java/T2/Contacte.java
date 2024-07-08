@@ -1,4 +1,4 @@
-package T2.models;
+package T2;
 
 import T2.interfaces.Adreca;
 import T2.interfaces.NumTlfn;
