@@ -18,5 +18,10 @@ public class TlfnItalia implements NumTlfn {
     public String getNumeroTlfn() {
         return prefix + this.num;
     }
+
+    @Override
+    public String toString() {
+        return getNumeroTlfn();
+    }
 }
 

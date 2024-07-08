@@ -22,6 +22,12 @@ public class AdrecaGrecia implements Adreca {
 
     @Override
     public String getAdreca() {
-        return adreca + codiPostal + ciutat + pais;
+        return adreca + " " + codiPostal + " " + ciutat + " " + pais;
     }
+
+    @Override
+    public String toString() {
+        return getAdreca();
+    }
+
 }

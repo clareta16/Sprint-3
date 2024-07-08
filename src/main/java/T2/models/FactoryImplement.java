@@ -8,19 +8,6 @@ public class FactoryImplement implements AbstractFactory {
 
 
     @Override
-    public NumTlfn getNumTlfn(String pais) {
-        if (pais.equalsIgnoreCase("Espanya")) {
-            return new TlfnEspanya();
-        } else if (pais.equalsIgnoreCase("Grècia")) {
-            return new TlfnGrecia();
-        } else if (pais.equalsIgnoreCase("Itàlia")) {
-            return new TlfnItalia();
-        }
-        return null;
-
-    }
-
-    @Override
     public Adreca getAdreca(String pais) {
         if (pais.equalsIgnoreCase("Espanya")) {
             return new AdrecaEspanya();
@@ -28,6 +15,19 @@ public class FactoryImplement implements AbstractFactory {
             return new AdrecaGrecia();
         } else if (pais.equalsIgnoreCase("Itàlia")) {
             return new AdrecaItalia();
+        }
+        return null;
+
+    }
+
+    @Override
+    public NumTlfn getNumTlfn(String pais) {
+        if (pais.equalsIgnoreCase("Espanya")) {
+            return new TlfnEspanya();
+        } else if (pais.equalsIgnoreCase("Grècia")) {
+            return new TlfnGrecia();
+        } else if (pais.equalsIgnoreCase("Itàlia")) {
+            return new TlfnItalia();
         }
         return null;
 
